@@ -1,0 +1,5 @@
+# Configuração de deploy para o Netlify
+# Build usando o Next.js com export estático (saída em /out)
+[build]
+  command = "npm run build"
+  publish = "out"
