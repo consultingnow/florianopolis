@@ -19,10 +19,10 @@ export const brand = {
   whatsapp: "+55 48 9675-4392",
   whatsappLink: "https://wa.me/554896754392",
   email: "contato.florianopolis@consultingnow.com.br",
-  instagram: "https://instagram.com/consultingnow", // TODO: perfil oficial
+  instagram: "https://www.instagram.com/consultingnow/",
   linkedin: "https://linkedin.com/company/consultingnow", // TODO: perfil oficial
   footerNote:
-    "Unidade franqueada do Grupo InterMaster — consultoria em gestão empresarial para Indústria, Comércio e Serviços em Santa Catarina e região.",
+    "Unidade franqueada do Grupo InterMaster, consultoria em gestão empresarial para Indústria, Comércio e Serviços em Santa Catarina e região.",
   mark: "CN", // "CN" azul usado como marca quando o logo não for exibido.
 };
 
@@ -38,9 +38,10 @@ export const hero = {
   ctaPrimary: "Quero meu diagnóstico gratuito",
   ctaSecondary: "Conheça o método",
   stats: [
-    { value: "+32", label: "anos de atuação" },
+    { value: "+30", label: "anos de experiência" },
+    { value: "+700", label: "empresas reestruturadas" },
     { value: "+100", label: "unidades no Brasil" },
-    { value: "3", label: "setores de atuação" },
+    { value: "R$ 1 bi", label: "de faturamento gerenciado em projetos (2024)" },
   ],
 };
 
@@ -96,6 +97,53 @@ export const dores = {
     },
   ],
 };
+/* ------------------------------------------------------------------ */
+/* SERVIÇOS                                                            */
+/* ------------------------------------------------------------------ */
+export type Servico = {
+  id: string;
+  titulo: string;
+  descricao: string;
+  icone: "trending-up" | "receipt" | "handshake" | "monitor-cog";
+};
+
+export const servicos = {
+  titulo: "Como podemos te ajudar",
+  subLinha:
+    "Soluções rápidas, inteligentes e inovadoras para garantir o sucesso do seu negócio. Um time de consultores com experiências multidisciplinares está preparado para alavancar a sua empresa.",
+  itens: [
+    {
+      id: "gestao-processos",
+      titulo: "Consultoria em Gestão e Processos",
+      descricao:
+        "Alavancagem e reorganização de empresas de pequeno e médio porte, com plano de ação personalizado.",
+      icone: "trending-up",
+    },
+    {
+      id: "recuperacao-impostos",
+      titulo: "Recuperação de Impostos",
+      descricao:
+        "Ações que contribuem para a diminuição da carga tributária e a recuperação de créditos pagos indevidamente.",
+      icone: "receipt",
+    },
+    {
+      id: "ma",
+      titulo: "M&A: Compra, Venda e Fusão de Empresas",
+      descricao:
+        "Assessoria completa em fusões, aquisições e reestruturações societárias, do valuation ao fechamento.",
+      icone: "handshake",
+    },
+    {
+      id: "erp",
+      titulo: "ERP e Automação",
+      descricao:
+        "Otimização e automatização de processos com sistemas integrados, transformando dado em decisão.",
+      icone: "monitor-cog",
+    },
+  ] satisfies Servico[],
+  cta: "E muito mais: fale com um consultor",
+};
+
 /* METODOLOGIA (2 fases)                                              */
 /* ------------------------------------------------------------------ */
 export const metodologia = {
@@ -199,30 +247,30 @@ export const depoimentos = {
     {
       id: "dep-01",
       segmento: "Indústria",
-      cargo: "Diretor(a) · Indústria",
+      cargo: "Diretor · Indústria",
       texto:
-        "[Depoimento de cliente sobre resultado alcançado — ex.: redução de custo de produção e aproveitamento da ociosidade.]",
+        "[Depoimento de cliente sobre resultado alcançado; ex.: redução de custo de produção e aproveitamento da ociosidade.]",
     },
     {
       id: "dep-02",
       segmento: "Comércio",
       cargo: "Sócia(o) · Comércio",
       texto:
-        "[Depoimento de cliente sobre resultado alcançado — ex.: recuperação de margem e giro de estoque.]",
+        "[Depoimento de cliente sobre resultado alcançado; ex.: recuperação de margem e giro de estoque.]",
     },
     {
       id: "dep-03",
       segmento: "Serviços",
       cargo: "Fundador(a) · Serviços",
       texto:
-        "[Depoimento de cliente sobre resultado alcançado — ex.: precificação revisada e escala da equipe com padrão de entrega.]",
+        "[Depoimento de cliente sobre resultado alcançado; ex.: precificação revisada e escala da equipe com padrão de entrega.]",
     },
     {
       id: "dep-04",
       segmento: "Resultados",
       cargo: "CEO · PME",
       texto:
-        "[Depoimento de cliente sobre resultado alcançado — ex.: metas batidas com rotina semanal de gestão.]",
+        "[Depoimento de cliente sobre resultado alcançado; ex.: metas batidas com rotina semanal de gestão.]",
     },
   ],
   numerosDestaque: [
@@ -230,6 +278,51 @@ export const depoimentos = {
     { valor: "+100", label: "unidades no Brasil" },
     { valor: "12 meses", label: "payback projetado na implantação" },
   ],
+};
+
+/* ------------------------------------------------------------------ */
+/* CONSULTOR                                                           */
+/* ------------------------------------------------------------------ */
+export const consultor = {
+  eyebrow: "Nosso consultor",
+  titulo: "Quem conduz a Consulting Now Florianópolis",
+  nome: "André Acosta",
+  cargo: "Franqueado · Consulting Now Florianópolis/SC",
+  foto: "/consultor.jpg", // salve a foto em public/consultor.jpg; sem ela, exibe as iniciais
+  bio: [
+    "André Acosta é o franqueado da Consulting Now em Florianópolis/SC. Mais do que levar uma metodologia estruturada às empresas da região, ele trabalha lado a lado com o empresário, do primeiro diagnóstico ao resultado consolidado.",
+    "Se a sua empresa está em Florianópolis e busca uma gestão mais eficiente, fale com a unidade da região.",
+  ],
+  focos: [
+    {
+      icone: "search",
+      titulo: "Diagnóstico preciso",
+      texto: "Mapeia gargalos e oportunidades antes de propor qualquer solução.",
+    },
+    {
+      icone: "rocket",
+      titulo: "Implantação lado a lado",
+      texto: "Executa as mudanças junto com a equipe, sem deixar só um relatório.",
+    },
+    {
+      icone: "trending-up",
+      titulo: "Acompanhamento contínuo",
+      texto: "Rotina de gestão que sustenta resultados no longo prazo.",
+    },
+  ] as { icone: string; titulo: string; texto: string }[],
+  ctaPrimario: "Falar com o André no WhatsApp",
+  instagramCta: "Siga a Consulting Now",
+};
+
+/* ------------------------------------------------------------------ */
+/* CEO                                                                 */
+/* ------------------------------------------------------------------ */
+export const ceo = {
+  nome: "Vicente Gomes",
+  cargo: "CEO · Consulting Now / Grupo InterMaster",
+  foto: "/ceo.avif",
+  bio:
+    "À frente da Consulting Now, do Grupo InterMaster, o CEO conduz uma trajetória de 3 décadas e mais de 500 clientes atendidos, com uma metodologia diferenciada para implementar o que há de mais eficaz no mercado de forma objetiva e personalizada, sendo corresponsável pela efetiva implementação das soluções propostas.",
 };
 
 /* ------------------------------------------------------------------ */
@@ -256,9 +349,11 @@ export const formulario = {
 export const footer = {
   navegacao: [
     { rotulo: "Início", alvo: "#inicio" },
+    { rotulo: "Serviços", alvo: "#servicos" },
     { rotulo: "Segmentos", alvo: "#segmentos" },
     { rotulo: "Metodologia", alvo: "#metodologia" },
     { rotulo: "Quem somos", alvo: "#sobre" },
+    { rotulo: "Consultor", alvo: "#consultor" },
     { rotulo: "Pilares", alvo: "#pilares" },
     { rotulo: "Depoimentos", alvo: "#depoimentos" },
     { rotulo: "Diagnóstico gratuito", alvo: "#diagnostico" },
@@ -280,7 +375,7 @@ export const sobre = {
     {
       titulo: "Corresponsáveis pela implantação",
       texto:
-        "Além de desenvolver o projeto de reestruturação, nos corresponsabilizamos pela efetiva implantação das soluções propostas — maior eficácia e agilidade na obtenção de resultados.",
+        "Além de desenvolver o projeto de reestruturação, nos corresponsabilizamos pela efetiva implantação das soluções propostas, gerando maior eficácia e agilidade na obtenção de resultados.",
     },
     {
       titulo: "Retorno visado em até 12 meses",

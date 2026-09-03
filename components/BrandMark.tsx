@@ -15,7 +15,7 @@ export default function BrandMark({
   return (
     <Image
       src={onDark ? "/logo.png" : "/logo_Blue.png"}
-      alt="Consulting Now Florianópolis — Consultoria em Gestão Empresarial"
+      alt="Consulting Now Florianópolis - Consultoria em Gestão Empresarial"
       width={150}
       height={102}
       priority={!onDark}

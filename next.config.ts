@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   // Export estático: gera a pasta /out com HTML/CSS/JS puros.
   // Ideal para hospedar no Netlify (publicação dos arquivos estáticos).
   output: "export",
+  // Com output: 'export' não há otimização de imagens no servidor;
+  // usa o loader nativo (necessário também para `next dev` funcionar).
+  images: { unoptimized: true },
   // Fixa a raiz de tracing no diretório do projeto, evitando que o Next
   // infira um workspace incorreto por causa de package-lock.json em pastas-pai.
   outputFileTracingRoot: __dirname,

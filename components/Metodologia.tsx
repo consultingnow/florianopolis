@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Check, ClipboardList } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import { metodologia } from "@/lib/content";
@@ -62,6 +63,17 @@ export default function Metodologia() {
               </li>
             ))}
           </ol>
+        </div>
+
+        {/* Infográfico oficial da metodologia */}
+        <div className="mt-14 overflow-hidden rounded-2xl border border-slate-200/80 bg-cloud p-4 sm:p-8">
+          <Image
+            src="/metodologia.png"
+            alt="Infográfico da metodologia Consulting Now: Diagnóstico e Projeto"
+            width={1200}
+            height={630}
+            className="mx-auto h-auto w-full max-w-4xl rounded-xl object-contain"
+          />
         </div>
 
         <div className="mt-16 flex justify-center">

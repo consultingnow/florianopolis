@@ -14,8 +14,12 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
+  /* Renderização suave das fontes em todos os navegadores */
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-feature-settings: "kern", "liga";
+  font-synthesis: none;
 }
 
 /* Seleção com a cor de destaque */
@@ -36,5 +40,44 @@ section[id] {
 
   .label-eyebrow {
     @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-accent;
+  }
+}
+
+/* ================================================================ */
+/* EFEITO CÂMERA DE DRONE — Ken Burns 3D na foto de fundo do Hero    */
+/* ================================================================ */
+.drone-viewport {
+  overflow: hidden;
+  /* Cria o ambiente 3D para a inclinação do gimbal (rotateX) */
+  perspective: 1200px;
+}
+
+.drone-camera {
+  /* Voo contínuo com vaivém suave (alternate) */
+  animation: vooDrone 24s ease-in-out infinite alternate;
+  transform-origin: center;
+  will-change: transform;
+}
+
+@keyframes vooDrone {
+  0% {
+    /* Drone afastado e plano */
+    transform: scale(1) translate(0, 0) rotate(0deg) rotateX(0deg);
+  }
+  50% {
+    /* Avanço com deslocamento lateral e leve inclinação */
+    transform: scale(1.15) translate(-3%, -2%) rotate(1deg) rotateX(5deg);
+  }
+  100% {
+    /* Voo mais alto, inclinado e avançando */
+    transform: scale(1.25) translate(2%, -4%) rotate(-1.5deg) rotateX(8deg);
+  }
+}
+
+/* Acessibilidade: desativa o voo para quem prefere movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  .drone-camera {
+    animation: none;
+    transform: scale(1.1);
   }
 }

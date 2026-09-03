@@ -1,5 +1,6 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import { hero } from "@/lib/content";
+import HeroVideo from "@/components/HeroVideo";
 
 function splitHeadline(headline: string, highlight: string) {
   const lower = headline.toLowerCase();
@@ -28,24 +29,13 @@ function splitHeadline(headline: string, highlight: string) {
 export default function Hero() {
   return (
     <section id="inicio" className="relative overflow-hidden bg-navy">
-      {/* Composição geométrica de fundo */}
+      {/* Vídeo aéreo de Florianópolis com parallax + overlay escuro */}
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-        <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-accent/25 blur-3xl" />
-        <div className="absolute bottom-0 left-0 h-80 w-80 rounded-full bg-accent/20 blur-3xl" />
-        <svg
-          className="absolute inset-0 h-full w-full opacity-[0.07]"
-          viewBox="0 0 800 600"
-          fill="none"
-          preserveAspectRatio="xMidYMid slice"
-        >
-          <circle cx="120" cy="80" r="180" stroke="#EEF1F7" strokeWidth="1" />
-          <circle cx="700" cy="420" r="220" stroke="#EEF1F7" strokeWidth="1" />
-          <path d="M0 520 200 400 420 520 640 400 800 520" stroke="#EEF1F7" strokeWidth="1" />
-          <path d="M0 560 220 460 480 560 700 460 800 540" stroke="#EEF1F7" strokeWidth="1" />
-        </svg>
+        <HeroVideo />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/85 via-navy/75 to-navy/90" />
       </div>
 
-      <div className="container-page relative grid items-center gap-14 pb-20 pt-32 lg:grid-cols-[1.15fr_0.85fr] lg:pb-28 lg:pt-40">
+      <div className="container-page relative pb-20 pt-32 lg:pb-28 lg:pt-40">
         {/* Coluna de texto */}
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-accent-light/30 bg-accent/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-accent-light">
@@ -78,7 +68,7 @@ export default function Hero() {
           </div>
 
           {/* Estatísticas */}
-          <dl className="mt-12 grid grid-cols-3 gap-4 border-t border-white/15 pt-8 sm:gap-6">
+          <dl className="mt-12 grid grid-cols-2 gap-4 border-t border-white/15 pt-8 sm:gap-6 lg:grid-cols-4">
             {hero.stats.map((stat) => (
               <div key={stat.label}>
                 <dd className="font-display text-3xl font-semibold text-white sm:text-4xl">
@@ -91,42 +81,7 @@ export default function Hero() {
             ))}
           </dl>
         </div>
-
-        {/* Coluna visual / motivo geométrico */}
-        <div className="relative hidden lg:block" aria-hidden="true">
-          <AbstractCard />
-        </div>
       </div>
     </section>
-  );
-}
-
-function AbstractCard() {
-  return (
-    <div className="relative">
-      <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
-        <div className="grid grid-cols-2 gap-4">
-          {[
-            { label: "Estratégia", w: "h-16" },
-            { label: "Processos", w: "h-24" },
-            { label: "Gestão", w: "h-20" },
-            { label: "Gente", w: "h-28" },
-          ].map((item, i) => (
-            <div key={item.label} className="rounded-2xl border border-white/10 bg-navy-light/40 p-4">
-              <span
-                className={`block rounded-lg ${item.w} w-full ${
-                  i % 3 === 0 ? "bg-accent/60" : i % 3 === 1 ? "bg-accent-light/40" : "bg-white/20"
-                }`}
-              />
-              <p className="mt-3 text-sm font-medium text-slate-300">{item.label}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="absolute -bottom-5 -right-5 rounded-2xl bg-accent px-6 py-5 shadow-lift">
-        <p className="font-display text-3xl font-semibold text-white">+700</p>
-        <p className="text-xs font-medium text-white/80">empresas reestruturadas</p>
-      </div>
-    </div>
   );
 }

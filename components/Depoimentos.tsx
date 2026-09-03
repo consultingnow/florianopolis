@@ -24,7 +24,7 @@ export default function Depoimentos() {
               </blockquote>
               <figcaption className="mt-6 flex items-center gap-3 border-t border-slate-100 pt-5">
                 <span className="grid h-10 w-10 place-items-center rounded-full bg-accent/10 font-display text-sm font-semibold text-accent">
-                  {dep.cargo.charAt(0)}
+                  {dep.segmento.charAt(0)}
                 </span>
                 <div>
                   <p className="text-sm font-semibold text-navy">{dep.segmento}</p>

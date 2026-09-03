@@ -108,6 +108,15 @@ export default function Footer() {
                   {brand.email}
                 </a>
               </li>
+              <li>
+                <a
+                  href={`mailto:${brand.email}`}
+                  className="inline-flex items-center gap-2 text-sm text-slate-400 transition-colors hover:text-accent-light"
+                >
+                  <Mail className="h-4 w-4 text-accent-light" />
+                  {brand.email}
+                </a>
+              </li>
             </ul>
           </div>
         </div>

@@ -150,7 +150,6 @@ export default function FormularioContato() {
                     value={form.setor}
                     onChange={(e) => atualizar("setor", e.target.value)}
                     required
-                    defaultValue=""
                   >
                     <option value="" disabled>
                       {placeholders.setor}
