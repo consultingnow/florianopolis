@@ -34,13 +34,13 @@ export default function Footer() {
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
               {brand.footerNote}
             </p>
-            <div className="mt-5 flex items-center gap-3">
+            <div className="mt-6 flex items-center gap-3">
               <a
                 href={brand.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="grid h-10 w-10 place-items-center rounded-lg border border-white/10 text-slate-300 transition-colors hover:border-accent hover:text-accent-light"
+                className="grid h-10 w-10 place-items-center rounded-lg border border-white/10 text-slate-300 transition-all hover:-translate-y-0.5 hover:border-accent hover:text-accent-light"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -49,16 +49,9 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="grid h-10 w-10 place-items-center rounded-lg border border-white/10 text-slate-300 transition-colors hover:border-accent hover:text-accent-light"
+                className="grid h-10 w-10 place-items-center rounded-lg border border-white/10 text-slate-300 transition-all hover:-translate-y-0.5 hover:border-accent hover:text-accent-light"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="#inicio"
-                aria-label="Voltar ao topo"
-                className="ml-auto grid h-10 w-10 place-items-center rounded-lg border border-white/10 text-slate-300 transition-colors hover:border-accent hover:text-accent-light"
-              >
-                <ArrowUp className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -104,16 +97,7 @@ export default function Footer() {
                   href={`mailto:${brand.email}`}
                   className="inline-flex items-center gap-2 text-sm text-slate-400 transition-colors hover:text-accent-light"
                 >
-                  <Mail className="h-4 w-4 text-accent-light" />
-                  {brand.email}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`mailto:${brand.email}`}
-                  className="inline-flex items-center gap-2 text-sm text-slate-400 transition-colors hover:text-accent-light"
-                >
-                  <Mail className="h-4 w-4 text-accent-light" />
+                  <Mail className="h-4 w-4 flex-none text-accent-light" />
                   {brand.email}
                 </a>
               </li>
@@ -124,15 +108,24 @@ export default function Footer() {
 
       {/* Legal */}
       <div className="border-t border-white/10">
-        <div className="container-page flex flex-col items-center justify-between gap-2 py-6 text-center sm:flex-row">
+        <div className="container-page flex flex-col items-center justify-between gap-3 py-6 text-center sm:flex-row sm:gap-2">
           <p className="text-xs text-slate-500">
             © {new Date().getFullYear()} Consulting Now Florianópolis · {brand.name}
           </p>
-          <p className="text-xs text-slate-500">
-            Unidade franqueada da rede{" "}
-            <span className="text-slate-400">Grupo InterMaster</span> · CNPJ da
-            unidade
-          </p>
+          <div className="flex items-center gap-4">
+            <p className="text-xs text-slate-500">
+              Unidade franqueada da rede{" "}
+              <span className="text-slate-400">Grupo InterMaster</span> · CNPJ da
+              unidade
+            </p>
+            <a
+              href="#inicio"
+              aria-label="Voltar ao topo"
+              className="grid h-9 w-9 flex-none place-items-center rounded-lg border border-white/10 text-slate-400 transition-all hover:-translate-y-0.5 hover:border-accent hover:text-accent-light"
+            >
+              <ArrowUp className="h-4 w-4" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

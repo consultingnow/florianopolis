@@ -18,7 +18,7 @@ export default function Depoimentos() {
               key={dep.id}
               className="relative flex flex-col rounded-2xl border border-slate-200/80 bg-white p-8 shadow-card"
             >
-              <Quote className="h-9 w-9 text-accent/15" aria-hidden="true" />
+              <Quote className="h-9 w-9 text-accent/25" aria-hidden="true" />
               <blockquote className="mt-4 flex-1 text-base leading-relaxed text-ink">
                 “{dep.texto}”
               </blockquote>

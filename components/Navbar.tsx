@@ -35,14 +35,14 @@ export default function Navbar() {
             <a
               key={link.alvo}
               href={link.alvo}
-              className="text-sm font-medium text-ink-soft transition-colors hover:text-accent"
+              className="nav-link text-sm font-medium text-ink-soft transition-colors hover:text-accent"
             >
               {link.rotulo}
             </a>
           ))}
           <a
             href="#diagnostico"
-            className="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-[0_10px_24px_-10px_rgba(46,94,234,0.8)] transition-all hover:bg-accent-dark"
+            className="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-[0_10px_24px_-10px_rgba(46,94,234,0.8)] transition-all hover:-translate-y-0.5 hover:bg-accent-dark"
           >
             {hero.ctaPrimary}
           </a>

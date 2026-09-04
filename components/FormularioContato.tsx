@@ -108,6 +108,7 @@ export default function FormularioContato() {
                       placeholder={placeholders.nome}
                       value={form.nome}
                       onChange={(e) => atualizar("nome", e.target.value)}
+                      autoComplete="name"
                       required
                     />
                   </Field>
@@ -117,6 +118,7 @@ export default function FormularioContato() {
                       placeholder={placeholders.empresa}
                       value={form.empresa}
                       onChange={(e) => atualizar("empresa", e.target.value)}
+                      autoComplete="organization"
                       required
                     />
                   </Field>
@@ -130,6 +132,8 @@ export default function FormularioContato() {
                       value={form.telefone}
                       onChange={(e) => atualizar("telefone", e.target.value)}
                       type="tel"
+                      autoComplete="tel"
+                      inputMode="tel"
                       required
                     />
                   </Field>
@@ -140,6 +144,7 @@ export default function FormularioContato() {
                       value={form.email}
                       onChange={(e) => atualizar("email", e.target.value)}
                       type="email"
+                      autoComplete="email"
                       required
                     />
                   </Field>

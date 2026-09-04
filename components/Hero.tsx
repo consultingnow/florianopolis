@@ -38,20 +38,20 @@ export default function Hero() {
       <div className="container-page relative pb-20 pt-32 lg:pb-28 lg:pt-40">
         {/* Coluna de texto */}
         <div>
-          <span className="inline-flex items-center gap-2 rounded-full border border-accent-light/30 bg-accent/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-accent-light">
+          <span className="fade-up fade-up-1 inline-flex items-center gap-2 rounded-full border border-accent-light/30 bg-accent/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-accent-light">
             <Sparkles className="h-3.5 w-3.5" />
             {hero.badge}
           </span>
 
-          <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.15] tracking-tight text-white sm:text-5xl sm:leading-[1.08] lg:text-[3.4rem]">
+          <h1 className="fade-up fade-up-2 mt-6 font-display text-4xl font-semibold leading-[1.12] tracking-tight text-white sm:text-5xl sm:leading-[1.06] lg:text-[3.4rem]">
             {splitHeadline(hero.headline, hero.headlineHighlight)}
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/80 text-slate-300">
+          <p className="fade-up fade-up-3 mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
             {hero.subheadline}
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="fade-up fade-up-4 mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
               href="#diagnostico"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-7 py-3.5 text-base font-semibold text-white shadow-[0_14px_30px_-12px_rgba(46,94,234,0.9)] transition-all hover:bg-accent-dark hover:shadow-[0_18px_36px_-12px_rgba(46,94,234,1)]"

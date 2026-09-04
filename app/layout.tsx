@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Manrope, Inter } from "next/font/google";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 import "./globals.css";
 
 // Manrope: sans-serif geométrica e suave (sem serifa = visual liso,
@@ -54,6 +55,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={`${manrope.variable} ${inter.variable} font-sans antialiased`}>
         {children}
+        <WhatsAppFloat />
       </body>
     </html>
   );
