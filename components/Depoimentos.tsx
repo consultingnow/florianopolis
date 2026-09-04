@@ -23,11 +23,11 @@ export default function Depoimentos() {
                 “{dep.texto}”
               </blockquote>
               <figcaption className="mt-6 flex items-center gap-3 border-t border-slate-100 pt-5">
-                <span className="grid h-10 w-10 place-items-center rounded-full bg-accent/10 font-display text-sm font-semibold text-accent">
-                  {dep.segmento.charAt(0)}
+                <span className="grid h-10 w-10 flex-none place-items-center rounded-full bg-accent/10 font-display text-sm font-semibold text-accent">
+                  {dep.nome.charAt(0)}
                 </span>
                 <div>
-                  <p className="text-sm font-semibold text-navy">{dep.segmento}</p>
+                  <p className="text-sm font-semibold text-navy">{dep.nome}</p>
                   <p className="text-xs font-medium text-ink-muted">{dep.cargo}</p>
                 </div>
               </figcaption>

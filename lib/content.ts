@@ -234,9 +234,9 @@ export const pilares = {
 /* ------------------------------------------------------------------ */
 export type Depoimento = {
   id: string;
-  segmento: string;
-  cargo: string;
-  texto: string; // placeholder editável
+  nome: string;
+  cargo: string; // cargo · empresa
+  texto: string;
 };
 
 export const depoimentos = {
@@ -246,31 +246,31 @@ export const depoimentos = {
   list: [
     {
       id: "dep-01",
-      segmento: "Indústria",
-      cargo: "Diretor · Indústria",
+      nome: "Ricardo Martins",
+      cargo: "Diretor · Grampofix",
       texto:
-        "[Depoimento de cliente sobre resultado alcançado; ex.: redução de custo de produção e aproveitamento da ociosidade.]",
+        "A Consulting Now nos apresentou uma proposta de Diagnóstico seguida de um plano para ajuste e correção das rotas. Ficamos muito felizes com o resultado e recomendamos a todos que necessitem de uma atualização nas modernas práticas de gestão.",
     },
     {
       id: "dep-02",
-      segmento: "Comércio",
-      cargo: "Sócia(o) · Comércio",
+      nome: "Mário Held e Alexandre Alves",
+      cargo: "Sócios Diretores · Maxfalcon",
       texto:
-        "[Depoimento de cliente sobre resultado alcançado; ex.: recuperação de margem e giro de estoque.]",
+        "O Projeto da Consulting Now ajudou na implantação da área de Gestão de Projetos, bem como a implantação de um sistema que apoiasse o controle dos prazos, a obter indicadores de performance e previsibilidade financeira.",
     },
     {
       id: "dep-03",
-      segmento: "Serviços",
-      cargo: "Fundador(a) · Serviços",
+      nome: "Carla Carolina",
+      cargo: "Diretora Adm. Financeira · GT Express Transportes",
       texto:
-        "[Depoimento de cliente sobre resultado alcançado; ex.: precificação revisada e escala da equipe com padrão de entrega.]",
+        "O resultado foi alcançado, na verdade superado! Pois, antes do encerramento o Projeto já foi pago, tanto com o aumento das receitas, como com a redução dos custos e despesas.",
     },
     {
       id: "dep-04",
-      segmento: "Resultados",
-      cargo: "CEO · PME",
+      nome: "Sandro Antoun",
+      cargo: "Diretor Comercial · Semar Supermercados",
       texto:
-        "[Depoimento de cliente sobre resultado alcançado; ex.: metas batidas com rotina semanal de gestão.]",
+        "A Consulting Now foi um divisor de águas na trajetória da nossa empresa. Além de todo profissionalismo e competência da equipe que participou do Projeto, contamos também com uma visão externa e neutra, que nos ajudou a alavancar ainda mais nossos resultados.",
     },
   ],
   numerosDestaque: [
