@@ -25,13 +25,24 @@ export default function Depoimentos() {
               </blockquote>
               <figcaption className="mt-6 flex items-center gap-3 border-t border-slate-100 pt-5">
                 {dep.foto ? (
-                  <Image
-                    src={dep.foto}
-                    alt={`Foto de ${dep.nome}`}
-                    width={40}
-                    height={40}
-                    className="h-10 w-10 flex-none rounded-full border border-slate-200 object-cover"
-                  />
+                  <span className="flex flex-none -space-x-2">
+                    <Image
+                      src={dep.foto}
+                      alt={`Foto de ${dep.nome.split(" e ")[0]}`}
+                      width={40}
+                      height={40}
+                      className="h-10 w-10 rounded-full border-2 border-white object-cover"
+                    />
+                    {dep.foto2 && (
+                      <Image
+                        src={dep.foto2}
+                        alt={`Foto de ${dep.nome.split(" e ")[1] ?? dep.nome}`}
+                        width={40}
+                        height={40}
+                        className="h-10 w-10 rounded-full border-2 border-white object-cover"
+                      />
+                    )}
+                  </span>
                 ) : (
                   <span className="grid h-10 w-10 flex-none place-items-center rounded-full bg-accent/10 font-display text-sm font-semibold text-accent">
                     {dep.nome.charAt(0)}

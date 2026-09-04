@@ -237,6 +237,7 @@ export type Depoimento = {
   nome: string;
   cargo: string; // cargo · empresa
   foto?: string; // foto da pessoa em /public
+  foto2?: string; // segunda foto (dep de duas pessoas)
   texto: string;
 };
 
@@ -257,7 +258,8 @@ export const depoimentos = {
       id: "dep-02",
       nome: "Mário Held e Alexandre Alves",
       cargo: "Sócios Diretores · Maxfalcon",
-      foto: "/maxfalcon.png",
+      foto: "/maxfalcon1.png",
+      foto2: "/maxfalcon2.png",
       texto:
         "O Projeto da Consulting Now ajudou na implantação da área de Gestão de Projetos, bem como a implantação de um sistema que apoiasse o controle dos prazos, a obter indicadores de performance e previsibilidade financeira.",
     },
