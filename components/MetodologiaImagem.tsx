@@ -95,24 +95,24 @@ export default function MetodologiaImagem() {
           role="dialog"
           aria-modal="true"
           aria-label="Infográfico da metodologia ampliado"
-          className="fixed inset-0 z-[60] flex flex-col bg-navy-deep/95 backdrop-blur-sm"
+          className="fixed inset-0 z-[60] flex flex-col bg-white"
           onClick={(e) => {
             if (e.target === e.currentTarget) fechar();
           }}
         >
           {/* Barra de controles */}
-          <div className="flex items-center justify-between gap-2 p-4">
-            <p className="text-xs font-medium text-slate-300 sm:text-sm">
+          <div className="flex items-center justify-between gap-2 border-b border-slate-200 p-4">
+            <p className="text-xs font-medium text-ink-soft sm:text-sm">
               Arraste ou use os botões para explorar as etapas
             </p>
             <div className="flex items-center gap-2">
-              <button type="button" onClick={reduzir} aria-label="Reduzir zoom" className="grid h-10 w-10 place-items-center rounded-lg border border-white/15 text-white transition-colors hover:bg-white/10">
+              <button type="button" onClick={reduzir} aria-label="Reduzir zoom" className="grid h-10 w-10 place-items-center rounded-lg border border-slate-300 text-navy transition-colors hover:bg-cloud">
                 <ZoomOut className="h-5 w-5" />
               </button>
-              <button type="button" onClick={ampliar} aria-label="Ampliar zoom" className="grid h-10 w-10 place-items-center rounded-lg border border-white/15 text-white transition-colors hover:bg-white/10">
+              <button type="button" onClick={ampliar} aria-label="Ampliar zoom" className="grid h-10 w-10 place-items-center rounded-lg border border-slate-300 text-navy transition-colors hover:bg-cloud">
                 <ZoomIn className="h-5 w-5" />
               </button>
-              <button type="button" onClick={fechar} aria-label="Fechar" className="grid h-10 w-10 place-items-center rounded-lg border border-white/15 text-white transition-colors hover:bg-white/10">
+              <button type="button" onClick={fechar} aria-label="Fechar" className="grid h-10 w-10 place-items-center rounded-lg border border-slate-300 text-navy transition-colors hover:bg-cloud">
                 <X className="h-5 w-5" />
               </button>
             </div>
