@@ -286,14 +286,13 @@ export const depoimentos = {
 export const consultor = {
   eyebrow: "Nosso consultor",
   titulo: "Quem conduz a Consulting Now Florianópolis",
+  resposta: "André Acosta, Representante da Consulting Now em Florianópolis",
   nome: "André Acosta",
-  cargo: "Consultor Representante · Grande Florianópolis e Região Sul",
-  credenciais:
-    "Diretor Administrativo e Financeiro – CFO · Especialista em Finanças, Controladoria e Gestão de Pessoas · Conselheiro Certificado",
+  cargo: "Representante da Consulting Now em Florianópolis",
   foto: "/consultor.jpg", // salve a foto em public/consultor.jpg; sem ela, exibe as iniciais
   bio: [
-    "Executivo com sólida experiência em Finanças, Controladoria, FP&A e Governança, atuando em grandes empresas nacionais e multinacionais. Vivência em planejamento estratégico e financeiro, otimização de custos, viabilidade econômico-financeira, valuations, M&A e implantação de sistemas ERP (SAP, TOTVS), além do desenvolvimento de equipes de alta performance.",
-    "Como consultor representante da Consulting Now na Grande Florianópolis e Região Sul, traduz essa experiência em diagnósticos precisos e implementação lado a lado com o empresário, do primeiro diagnóstico ao resultado consolidado.",
+    "Diretor Administrativo e Financeiro – CFO, é especialista em Finanças, Controladoria, Gestão de Pessoas e Conselheiro Certificado. Construiu carreira em grandes empresas nacionais e multinacionais, com vivência em planejamento estratégico e financeiro, otimização de custos, viabilidade econômico-financeira, valuations, M&A e implantação de sistemas ERP (SAP, TOTVS), além do desenvolvimento de equipes de alta performance.",
+    "Como Representante da Consulting Now em Florianópolis, traduz essa trajetória em diagnósticos precisos e implementação lado a lado com o empresário, do primeiro diagnóstico ao resultado consolidado.",
   ],
   focos: [
     {

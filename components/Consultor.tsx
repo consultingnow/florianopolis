@@ -94,9 +94,6 @@ export default function Consultor() {
               {consultor.nome}
             </p>
             <p className="text-xs text-white/80">{consultor.cargo}</p>
-            <p className="mt-1 text-[11px] leading-snug text-white/70">
-              {consultor.credenciais}
-            </p>
           </div>
         </div>
 
@@ -109,6 +106,9 @@ export default function Consultor() {
               eyebrow={consultor.eyebrow}
               titulo={consultor.titulo}
             />
+            <p className="fade-up mt-4 text-lg font-semibold text-accent-light">
+              {consultor.resposta}
+            </p>
           </div>
           <div className="mt-6 space-y-4">
             {consultor.bio.map((paragrafo, i) => (
