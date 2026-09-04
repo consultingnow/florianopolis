@@ -86,14 +86,17 @@ export default function Consultor() {
             )}
           </div>
           <div
-            className={`absolute inset-x-4 -bottom-5 rounded-2xl bg-accent px-5 py-3 text-center shadow-lift sm:inset-x-auto sm:left-1/2 sm:w-max sm:-translate-x-1/2 ${mostrar(
+            className={`absolute inset-x-4 -bottom-5 max-w-sm rounded-2xl bg-accent px-5 py-3 text-center shadow-lift sm:inset-x-auto sm:left-1/2 sm:w-max sm:max-w-md sm:-translate-x-1/2 ${mostrar(
               "delay-300",
             )}`}
           >
-            <p className="text-sm font-semibold text-white sm:whitespace-nowrap">
+            <p className="text-sm font-semibold text-white">
               {consultor.nome}
             </p>
             <p className="text-xs text-white/80">{consultor.cargo}</p>
+            <p className="mt-1 text-[11px] leading-snug text-white/70">
+              {consultor.credenciais}
+            </p>
           </div>
         </div>
 

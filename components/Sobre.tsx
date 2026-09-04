@@ -87,19 +87,19 @@ export default function Sobre() {
               <BadgeCheck className="h-4 w-4 text-accent" />
               CEO · Grupo InterMaster
             </span>
-            {/* Nome e bio sobre gradiente */}
-            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/95 via-navy/70 to-transparent p-6 pt-20 sm:p-8 sm:pt-24">
-              <h3 className="font-display text-2xl font-semibold text-white">
-                {ceo.nome}
-              </h3>
-              <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-accent-light">
-                {ceo.cargo}
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-slate-200">
-                {ceo.bio}
-              </p>
-            </figcaption>
           </div>
+          {/* Nome, cargo e bio abaixo da foto */}
+          <figcaption className="mt-5">
+            <h3 className="font-display text-2xl font-semibold text-navy">
+              {ceo.nome}
+            </h3>
+            <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-accent">
+              {ceo.cargo}
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+              {ceo.bio}
+            </p>
+          </figcaption>
         </figure>
       </div>
     </section>

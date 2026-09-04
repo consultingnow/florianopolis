@@ -287,11 +287,13 @@ export const consultor = {
   eyebrow: "Nosso consultor",
   titulo: "Quem conduz a Consulting Now Florianópolis",
   nome: "André Acosta",
-  cargo: "Franqueado · Consulting Now Florianópolis/SC",
+  cargo: "Consultor Representante · Grande Florianópolis e Região Sul",
+  credenciais:
+    "Diretor Administrativo e Financeiro – CFO · Especialista em Finanças, Controladoria e Gestão de Pessoas · Conselheiro Certificado",
   foto: "/consultor.jpg", // salve a foto em public/consultor.jpg; sem ela, exibe as iniciais
   bio: [
-    "André Acosta é o franqueado da Consulting Now em Florianópolis/SC. Mais do que levar uma metodologia estruturada às empresas da região, ele trabalha lado a lado com o empresário, do primeiro diagnóstico ao resultado consolidado.",
-    "Se a sua empresa está em Florianópolis e busca uma gestão mais eficiente, fale com a unidade da região.",
+    "Executivo com sólida experiência em Finanças, Controladoria, FP&A e Governança, atuando em grandes empresas nacionais e multinacionais. Vivência em planejamento estratégico e financeiro, otimização de custos, viabilidade econômico-financeira, valuations, M&A e implantação de sistemas ERP (SAP, TOTVS), além do desenvolvimento de equipes de alta performance.",
+    "Como consultor representante da Consulting Now na Grande Florianópolis e Região Sul, traduz essa experiência em diagnósticos precisos e implementação lado a lado com o empresário, do primeiro diagnóstico ao resultado consolidado.",
   ],
   focos: [
     {
@@ -322,7 +324,7 @@ export const ceo = {
   cargo: "CEO · Consulting Now / Grupo InterMaster",
   foto: "/ceo.avif",
   bio:
-    "À frente da Consulting Now, do Grupo InterMaster, o CEO conduz uma trajetória de 3 décadas e mais de 500 clientes atendidos, com uma metodologia diferenciada para implementar o que há de mais eficaz no mercado de forma objetiva e personalizada, sendo corresponsável pela efetiva implementação das soluções propostas.",
+    "À frente da Consulting Now, do Grupo InterMaster, lidera uma trajetória de 3 décadas e mais de 500 clientes atendidos, com metodologia objetiva e personalizada — corresponsável pela efetiva implementação das soluções propostas.",
 };
 
 /* ------------------------------------------------------------------ */
