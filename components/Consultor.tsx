@@ -7,6 +7,7 @@ import {
   TrendingUp,
   MessageCircle,
   Instagram,
+  Linkedin,
 } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import { consultor, brand } from "@/lib/content";
@@ -171,6 +172,16 @@ export default function Consultor() {
             >
               <Instagram className="h-4 w-4" />
               {consultor.instagramCta}
+            </a>
+            <a
+              href={consultor.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn do André Acosta"
+              title="LinkedIn do André"
+              className="grid h-[50px] w-[50px] flex-none place-items-center rounded-full border border-white/25 text-white transition-colors hover:border-accent hover:text-accent-light"
+            >
+              <Linkedin className="h-5 w-5" />
             </a>
           </div>
         </div>

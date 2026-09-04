@@ -318,6 +318,7 @@ export const consultor = {
   ] as { icone: string; titulo: string; texto: string }[],
   ctaPrimario: "Falar com o André no WhatsApp",
   instagramCta: "Siga a Consulting Now",
+  linkedin: "https://www.linkedin.com/in/andre-acosta/",
 };
 
 /* ------------------------------------------------------------------ */
