@@ -2,10 +2,8 @@ import Image from "next/image";
 
 /**
  * Marca da Consulting Now Florianópolis.
- * - Em fundo claro (navbar): usa a versão azul da logo (logo_Blue.png),
- *   criada para fundo branco.
- * - Em fundo escuro (footer navy): usa a versão branca da logo (logo.png),
- *   que contrasta bem sobre o azul-marinho.
+ * Usa a logo oficial (logo.jpg) tanto na navbar (fundo claro)
+ * quanto no footer (fundo escuro).
  */
 export default function BrandMark({
   onDark = false,
@@ -14,12 +12,12 @@ export default function BrandMark({
 }) {
   return (
     <Image
-      src={onDark ? "/logo.png" : "/logo_Blue.png"}
+      src="/logo.jpg"
       alt="Consulting Now Florianópolis - Consultoria em Gestão Empresarial"
-      width={150}
-      height={102}
+      width={1080}
+      height={1080}
       priority={!onDark}
-      className="h-10 w-auto"
+      className={onDark ? "h-10 w-auto rounded-md" : "h-10 w-auto"}
     />
   );
 }
