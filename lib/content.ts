@@ -236,6 +236,7 @@ export type Depoimento = {
   id: string;
   nome: string;
   cargo: string; // cargo · empresa
+  foto?: string; // foto da pessoa em /public
   texto: string;
 };
 
@@ -248,6 +249,7 @@ export const depoimentos = {
       id: "dep-01",
       nome: "Ricardo Martins",
       cargo: "Diretor · Grampofix",
+      foto: "/grampofix.png",
       texto:
         "A Consulting Now nos apresentou uma proposta de Diagnóstico seguida de um plano para ajuste e correção das rotas. Ficamos muito felizes com o resultado e recomendamos a todos que necessitem de uma atualização nas modernas práticas de gestão.",
     },
@@ -255,6 +257,7 @@ export const depoimentos = {
       id: "dep-02",
       nome: "Mário Held e Alexandre Alves",
       cargo: "Sócios Diretores · Maxfalcon",
+      foto: "/maxfalcon.png",
       texto:
         "O Projeto da Consulting Now ajudou na implantação da área de Gestão de Projetos, bem como a implantação de um sistema que apoiasse o controle dos prazos, a obter indicadores de performance e previsibilidade financeira.",
     },
@@ -262,6 +265,7 @@ export const depoimentos = {
       id: "dep-03",
       nome: "Carla Carolina",
       cargo: "Diretora Adm. Financeira · GT Express Transportes",
+      foto: "/gttransportes.png",
       texto:
         "O resultado foi alcançado, na verdade superado! Pois, antes do encerramento o Projeto já foi pago, tanto com o aumento das receitas, como com a redução dos custos e despesas.",
     },
@@ -269,6 +273,7 @@ export const depoimentos = {
       id: "dep-04",
       nome: "Sandro Antoun",
       cargo: "Diretor Comercial · Semar Supermercados",
+      foto: "/semar.png",
       texto:
         "A Consulting Now foi um divisor de águas na trajetória da nossa empresa. Além de todo profissionalismo e competência da equipe que participou do Projeto, contamos também com uma visão externa e neutra, que nos ajudou a alavancar ainda mais nossos resultados.",
     },
